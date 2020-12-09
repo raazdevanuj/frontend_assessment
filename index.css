@@ -40,7 +40,10 @@ body {
   background: #f1f1f1;
 }
 
-
+.clear
+{ border: none;
+  cursor: pointer;
+}
 /* Set a style for the submit/login button */
 .form-container .btn {
   background-color: #4CAF50;
@@ -53,27 +56,25 @@ body {
   opacity: 0.8;
 }
 
-/* Add a red background color to the cancel button */
 .form-container .cancel {
   background-color: white;
 }
 .form-container .reset {
   background-color: black;
 }
-/* Add some hover effects to buttons */
 .form-container .btn:hover, .open-button:hover {
   opacity: 1;
 }
-.form-style-6 input[type="text"],
-.form-style-6 input[type="date"],
-.form-style-6 input[type="datetime"],
-.form-style-6 input[type="email"],
-.form-style-6 input[type="number"],
-.form-style-6 input[type="search"],
-.form-style-6 input[type="time"],
-.form-style-6 input[type="url"],
-.form-style-6 textarea,
-.form-style-6 select 
+.form-style input[type="text"],
+.form-style input[type="date"],
+.form-style input[type="datetime"],
+.form-style input[type="email"],
+.form-style input[type="number"],
+.form-style input[type="search"],
+.form-style input[type="time"],
+.form-style input[type="url"],
+.form-style textarea,
+.form-style select 
 {
 	
 	width: 160%;
@@ -91,6 +92,7 @@ body {
 th, td {
   padding: 0.5rem;
   background-color: #f2f2f2;
+  text-align:center;
 }
 tr.red th {
   background: red;

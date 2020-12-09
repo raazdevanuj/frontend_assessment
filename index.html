@@ -7,14 +7,14 @@
 
 <button class="open-button" onclick="openForm()"><b>New Employee</b></button>
 
-<div class="form-popup form-style-6 " id="myForm">
-  <form action="#" class="form-container">
+<div class="form-popup form-style" id="myForm">
+  <form action="#" class="form-container" autocomplete="off" name="form">
   <table>
  <tr>
-		<td><h1>Form</td><td></td><td></td><td></td><td></td></td><td>
+	<td><h1>Form</td><td></td><td></td><td></td><td></td></td><td>
 <td></td><td></td><td></td><td></td></td><td>
 <td></td><td></td><td></td><td></td></td><td>		
-   <button type="button"  onclick="closeForm()">
+   <button type="button" class="clear"  onclick="closeForm()">
 	<img src="reed-cross.png" width="50" height=50"/></button>
     </h1>
 	</td>
@@ -22,15 +22,15 @@
 <tr>
 		<td> 
 		<label><b>Name</b></label>
-		<br><input type="text" placeholder="Enter Name" name="name" required>
+		<br><input type="text" placeholder="Enter Name" id="name" required>
 	   </td>
 	   <td></td><td></td>
-	   <td></td>
+	   <td></td><td></td>
 	    <td></td><td></td>
 	   <td></td>
 	   <td>
 		  <label><b>Employee ID</b></label>
-			<br><input type="text" placeholder="Enter Employee ID" name="ID" required>
+			<br><input type="text" placeholder="Enter Employee ID" id="ID" required>
 	  </td>
   </tr>
   
@@ -38,7 +38,7 @@
 	  <td>
 			<label><b>Department</b></label>
 			<br>
-			<select id="dep" name="Department" required>
+			<select id="dep"  required>
 				  <option value="">select</option>
 				  <option value="Android">Android </option>
 				  <option value="Bot">Bot</option>
@@ -50,18 +50,18 @@
 		<td></td><td></td>
 	   <td></td>
 	    <td></td><td></td>
-	   <td></td>
+	   <td></td><td></td>
 		<td>
 			<label><b>Email Id</b></label>
 			<br>
-			<input type="Email" placeholder="Enter Email ID" name="E_ID" required>
+			<input type="Email" placeholder="Enter Email ID" id="E_ID" required>
 		   
 		</td>
 	</tr>
 <tr>
 	<td>
 	   <label><b>Date of Joining(DOJ)</b></label>
-	   <br><input type="Date" name="Date" required>
+	   <br><input type="Date"  id="doj" required>
 	</td>
 </tr>
 	
@@ -70,8 +70,7 @@
  
      <input type="reset" class="btn reset" value="Reset">
 	 
-    <button type="submit" class="btn">Submit</button>
-
+    <input type="button" class="btn"  id="add" value="Submit" onclick="addRow()"/>
    
 
   </form>
@@ -79,29 +78,24 @@
 </div>
 <br><br><br><br>
 <div>
-    <table class="check1">
+   <table  id="myTableData" class="check1">
   <thead>
     <tr class="red">
-	  <th></th>
+	  <th>&nbsp;</th>
       <th>Name </th>
       <th>Employee ID</th>
       <th>Department</th>
 	  <th>Email Id</th>
       <th>Date of Joining(DOJ)</th>
-      
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>Lorem.</td>
-      <td>Ullam.</td>
-      <td>Vel.</td>
-      <td>At.</td>
-      <td>Quis.</td>
     </tr>
 	 
      </tbody>
 </table>
+
 	</div>	
 </body>
 </html>
