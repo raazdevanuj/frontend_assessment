@@ -12,10 +12,9 @@ function closeForm() {
   document.getElementById("myForm").style.display = "none";
 }
 function validateemail(email)  
-{  
-var x=email;  
-var atposition=x.indexOf("@");  
-var dotposition=x.lastIndexOf(".");  
+{    
+var atposition=email.indexOf("@");  
+var dotposition=email.lastIndexOf(".");  
 if (atposition<1 || dotposition<atposition+2 || dotposition+2>=x.length){     
   return true;  
   }  
@@ -29,7 +28,6 @@ function addRow() {
 	var doj = document.getElementById("doj");
     var table = document.getElementById("myTableData");
     var strUser = dep.options[dep.selectedIndex].value;
-	
     var rowCount = table.rows.length;
     var row = table.insertRow(rowCount);
 	if(name.value=="")

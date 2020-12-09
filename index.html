@@ -1,101 +1,111 @@
 <!DOCTYPE html>
 <html>
-  <link rel="stylesheet" href="index.css">
+   <link rel="stylesheet" href="index.css">
    <script src="myscripts.js"></script>
-</head>
-<body>
-
-<button class="open-button" onclick="openForm()"><b>New Employee</b></button>
-
-<div class="form-popup form-style" id="myForm">
-  <form action="#" class="form-container" autocomplete="off" name="form">
-  <table>
- <tr>
-	<td><h1>Form</td><td></td><td></td><td></td><td></td></td><td>
-<td></td><td></td><td></td><td></td></td><td>
-<td></td><td></td><td></td><td></td></td><td>		
-   <button type="button" class="clear"  onclick="closeForm()">
-	<img src="reed-cross.png" width="50" height=50"/></button>
-    </h1>
-	</td>
-	</tr>
-<tr>
-		<td> 
-		<label><b>Name</b></label>
-		<br><input type="text" placeholder="Enter Name" id="name" required>
-	   </td>
-	   <td></td><td></td>
-	   <td></td><td></td>
-	    <td></td><td></td>
-	   <td></td>
-	   <td>
-		  <label><b>Employee ID</b></label>
-			<br><input type="text" placeholder="Enter Employee ID" id="ID" required>
-	  </td>
-  </tr>
-  
-  <tr>
-	  <td>
-			<label><b>Department</b></label>
-			<br>
-			<select id="dep"  required>
-				  <option value="">select</option>
-				  <option value="Android">Android </option>
-				  <option value="Bot">Bot</option>
-				  <option value="Front-End">Front-End</option>
-				  <option value="Back-End">Back-End</option>
-				  <option value="Full Stack">Full Stack</option>
-			</select>
-		</td>
-		<td></td><td></td>
-	   <td></td>
-	    <td></td><td></td>
-	   <td></td><td></td>
-		<td>
-			<label><b>Email Id</b></label>
-			<br>
-			<input type="Email" placeholder="Enter Email ID" id="E_ID" required>
-		   
-		</td>
-	</tr>
-<tr>
-	<td>
-	   <label><b>Date of Joining(DOJ)</b></label>
-	   <br><input type="Date"  id="doj" required>
-	</td>
-</tr>
-	
-
- </table>
- 
-     <input type="reset" class="btn reset" value="Reset">
-	 
-    <input type="button" class="btn"  id="add" value="Submit" onclick="addRow()"/>
-   
-
-  </form>
-  
-</div>
-<br><br><br><br>
-<div>
-   <table  id="myTableData" class="check1">
-  <thead>
-    <tr class="red">
-	  <th>&nbsp;</th>
-      <th>Name </th>
-      <th>Employee ID</th>
-      <th>Department</th>
-	  <th>Email Id</th>
-      <th>Date of Joining(DOJ)</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-    </tr>
-	 
-     </tbody>
-</table>
-
-	</div>	
-</body>
+   </head>
+   <body>
+      <button class="open-button" onclick="openForm()"><b>New Employee</b></button>
+      <div class="form-popup form-style" id="myForm">
+         <form action="#" class="form-container" autocomplete="off" name="form">
+            <table>
+               <tr>
+                  <td>
+                     <h1>Form</h1>
+                  </td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  </td>
+                  <td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  </td>
+                  <td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  </td>
+                  <td>		
+                     <button type="button" class="clear"  onclick="closeForm()">
+                     <img src="reed-cross.png" width="50" height=50"/></button>
+                  </td>
+               </tr>
+               <tr>
+                  <td> 
+                     <label><b>Name</b></label>
+                     <br><input type="text" placeholder="Enter Name" id="name" required>
+                  </td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>
+                     <label><b>Employee ID</b></label>
+                     <br><input type="text" placeholder="Enter Employee ID" id="ID" required>
+                  </td>
+               </tr>
+               <tr>
+                  <td>
+                     <label><b>Department</b></label>
+                     <br>
+                     <select id="dep"  required>
+                        <option value="">select</option>
+                        <option value="Android">Android </option>
+                        <option value="Bot">Bot</option>
+                        <option value="Front-End">Front-End</option>
+                        <option value="Back-End">Back-End</option>
+                        <option value="Full Stack">Full Stack</option>
+                     </select>
+                  </td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>
+                     <label><b>Email Id</b></label>
+                     <br>
+                     <input type="Email" placeholder="Enter Email ID" id="E_ID" required>
+                  </td>
+               </tr>
+               <tr>
+                  <td>
+                     <label><b>Date of Joining(DOJ)</b></label>
+                     <br><input type="Date"  id="doj" required>
+                  </td>
+               </tr>
+            </table>
+            <input type="reset" class="btn reset" value="Reset">
+            <input type="button" class="btn"  id="add" value="Submit" onclick="addRow()"/>
+         </form>
+      </div>
+      <br><br><br><br>
+      <div>
+         <table  id="myTableData" class="check1">
+            <thead>
+               <tr class="red">
+                  <th>&nbsp;</th>
+                  <th>Name </th>
+                  <th>Employee ID</th>
+                  <th>Department</th>
+                  <th>Email Id</th>
+                  <th>Date of Joining(DOJ)</th>
+               </tr>
+            </thead>
+            <tbody>
+               <tr>
+               </tr>
+            </tbody>
+         </table>
+      </div>
+   </body>
 </html>
