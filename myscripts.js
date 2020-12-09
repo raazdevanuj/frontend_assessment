@@ -12,9 +12,10 @@ function closeForm() {
   document.getElementById("myForm").style.display = "none";
 }
 function validateemail(email)  
-{    
-var atposition=email.indexOf("@");  
-var dotposition=email.lastIndexOf(".");  
+{  
+var x=email;
+var atposition=x.indexOf("@");  
+var dotposition=x.lastIndexOf(".");  
 if (atposition<1 || dotposition<atposition+2 || dotposition+2>=x.length){     
   return true;  
   }  
